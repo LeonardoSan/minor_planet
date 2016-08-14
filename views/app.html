@@ -1,0 +1,22 @@
+
+<div>
+<form name="form2">
+<div>
+<input type="number" placeholder="Eccentricity" name="ecentricity" ng-model="minor_platet.eccentricity">
+<input type="number" placeholder="Inclination" name="inclination" ng-model="minor_platet.inclination">
+<input type="number" placeholder="Semi-major Axis" name="axis" ng-model="minor_platet.axis">
+<input type="number" placeholder="Limit" name="limit" ng-model="minor_platet.limit">
+</div>
+<div>
+<button ng-click="getObjects(minor_platet)">Find</button>
+</div>
+</form>
+<br>
+
+<div ng-show="items">
+	<span>Objects found: {{objsFound}}</span>
+
+	<minor-planet></minor-planet>
+</div>
+
+</div>
